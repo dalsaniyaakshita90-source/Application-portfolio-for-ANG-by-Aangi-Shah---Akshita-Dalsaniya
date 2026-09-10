@@ -1,0 +1,6 @@
+{
+  "name": "Every Application Deserves a Seal",
+  "description": "A portfolio curated for ANG by Aangi Shah.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

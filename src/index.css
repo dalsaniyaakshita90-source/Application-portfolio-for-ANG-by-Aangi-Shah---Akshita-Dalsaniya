@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+@theme {
+  --color-on-error-container: #93000a;
+  --color-primary: #690011;
+  --color-on-secondary-fixed: #251a00;
+  --color-surface-bright: #fcf9f4;
+  --color-primary-fixed: #ffdad8;
+  --color-on-tertiary-fixed: #410007;
+  --color-surface-container-high: #ebe8e3;
+  --color-error: #ba1a1a;
+  --color-on-primary: #ffffff;
+  --color-on-background: #1c1c19;
+  --color-on-surface: #1c1c19;
+  --color-background: #fcf9f4;
+  --color-surface-container: #f0ede9;
+  --color-surface-dim: #dcdad5;
+  --color-on-primary-fixed: #410007;
+  --color-outline-variant: #dfbfbe;
+  --color-primary-container: #8a1c24;
+  --color-tertiary: #640e17;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-secondary-container: #765900;
+  --color-inverse-on-surface: #f3f0eb;
+  --color-surface-variant: #e5e2dd;
+  --color-inverse-primary: #ffb3b0;
+  --color-surface: #fcf9f4;
+  --color-on-error: #ffffff;
+  --color-on-secondary: #ffffff;
+  --color-outline: #8b7170;
+  --color-on-primary-container: #ff9a98;
+  --color-on-tertiary-container: #ff9a99;
+  --color-secondary: #775a00;
+  --color-secondary-fixed-dim: #ecc15a;
+  --color-secondary-fixed: #ffdf99;
+  --color-error-container: #ffdad6;
+  --color-surface-container-highest: #e5e2dd;
+  --color-surface-container-low: #f6f3ee;
+  --color-secondary-container: #fed269;
+  --color-surface-tint: #aa3438;
+  --color-tertiary-container: #83262a;
+  --color-inverse-surface: #31302d;
+  --color-tertiary-fixed: #ffdad8;
+  --color-on-tertiary-fixed-variant: #82252a;
+  --color-primary-fixed-dim: #ffb3b0;
+  --color-on-secondary-fixed-variant: #5a4300;
+  --color-on-surface-variant: #584140;
+  --color-on-tertiary: #ffffff;
+  --color-on-primary-fixed-variant: #891b23;
+  --color-tertiary-fixed-dim: #ffb3b1;
+  
+  --spacing-space-xl: 2rem;
+  --spacing-space-2xl: 3rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-xs: 0.5rem;
+  --spacing-gutter-mobile: 1rem;
+  --spacing-space-sm: 0.75rem;
+  --spacing-gutter-desktop: 2rem;
+  --spacing-space-2xs: 0.25rem;
+  --spacing-space-4xl: 6rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-max-content-width: 1280px;
+  --spacing-space-3xl: 4rem;
+  --spacing-margin-mobile: 1.25rem;
+  --spacing-margin-desktop: 4rem;
+  --spacing-space-3xs: 0.125rem;
+
+  --font-body-md: "EB Garamond", serif;
+  --font-headline-md: "EB Garamond", serif;
+  --font-headline-2xl: "EB Garamond", serif;
+  --font-label-lg: "Manrope", sans-serif;
+  --font-headline-xl-mobile: "EB Garamond", serif;
+  --font-body-sm: "EB Garamond", serif;
+  --font-headline-lg: "EB Garamond", serif;
+  --font-body-lg: "EB Garamond", serif;
+  --font-script-callout: "EB Garamond", serif;
+  --font-label-sm: "Manrope", sans-serif;
+  --font-headline-2xl-mobile: "EB Garamond", serif;
+  --font-headline-xl: "EB Garamond", serif;
+  --font-label-md: "Manrope", sans-serif;
+  --font-headline-sm: "EB Garamond", serif;
+
+  --text-body-md: 17px;
+  --text-body-md--line-height: 28px;
+  --text-body-md--letter-spacing: 0.01em;
+  --text-body-md--font-weight: 400;
+
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 32px;
+  --text-headline-md--letter-spacing: 0em;
+  --text-headline-md--font-weight: 500;
+
+  --text-headline-2xl: 56px;
+  --text-headline-2xl--line-height: 64px;
+  --text-headline-2xl--letter-spacing: -0.02em;
+  --text-headline-2xl--font-weight: 400;
+
+  --text-label-lg: 13px;
+  --text-label-lg--line-height: 18px;
+  --text-label-lg--letter-spacing: 0.12em;
+  --text-label-lg--font-weight: 600;
+
+  --text-headline-xl-mobile: 28px;
+  --text-headline-xl-mobile--line-height: 36px;
+  --text-headline-xl-mobile--letter-spacing: 0em;
+  --text-headline-xl-mobile--font-weight: 400;
+
+  --text-body-sm: 15px;
+  --text-body-sm--line-height: 24px;
+  --text-body-sm--letter-spacing: 0.015em;
+  --text-body-sm--font-weight: 400;
+
+  --text-headline-lg: 32px;
+  --text-headline-lg--line-height: 40px;
+  --text-headline-lg--letter-spacing: -0.01em;
+  --text-headline-lg--font-weight: 500;
+
+  --text-body-lg: 20px;
+  --text-body-lg--line-height: 32px;
+  --text-body-lg--letter-spacing: 0.01em;
+  --text-body-lg--font-weight: 400;
+
+  --text-script-callout: 22px;
+  --text-script-callout--line-height: 32px;
+  --text-script-callout--letter-spacing: 0.02em;
+  --text-script-callout--font-weight: 400;
+
+  --text-label-sm: 10px;
+  --text-label-sm--line-height: 14px;
+  --text-label-sm--letter-spacing: 0.16em;
+  --text-label-sm--font-weight: 500;
+
+  --text-headline-2xl-mobile: 36px;
+  --text-headline-2xl-mobile--line-height: 44px;
+  --text-headline-2xl-mobile--letter-spacing: -0.01em;
+  --text-headline-2xl-mobile--font-weight: 400;
+
+  --text-headline-xl: 40px;
+  --text-headline-xl--line-height: 48px;
+  --text-headline-xl--letter-spacing: -0.015em;
+  --text-headline-xl--font-weight: 400;
+
+  --text-label-md: 11px;
+  --text-label-md--line-height: 16px;
+  --text-label-md--letter-spacing: 0.14em;
+  --text-label-md--font-weight: 600;
+
+  --text-headline-sm: 20px;
+  --text-headline-sm--line-height: 28px;
+  --text-headline-sm--letter-spacing: 0em;
+  --text-headline-sm--font-weight: 600;
+}
+
+@layer base {
+  html, body { width: 100vw; min-height: 100%; margin: 0; padding: 0; }
+  body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; }
+  .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); }
+  .pt-safe { padding-top: env(safe-area-inset-top, 0px); }
+}
+
+::-webkit-scrollbar { display: none; }
