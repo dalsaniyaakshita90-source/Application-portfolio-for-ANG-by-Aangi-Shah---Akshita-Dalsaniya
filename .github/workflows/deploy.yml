@@ -6,24 +6,35 @@ permissions:
   contents: read
   pages: write
   id-token: write
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
+
       - name: Clean Install Packages
-        run: npm install
+        run: npm ci || npm install
+
       - name: Build Project
-        run: npm run build
+        run: npm run build -- --configuration production
+
       - name: Upload Build Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          # This automatically finds your build files even if they are inside a subfolder
+          path: |
+            ./dist
+            ./dist/*
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
