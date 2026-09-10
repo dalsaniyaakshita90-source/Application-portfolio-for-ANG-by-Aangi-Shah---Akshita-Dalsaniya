@@ -350,20 +350,20 @@ export default function App() {
                     </div>
                     
                     {/* Mock Post Images */}
-                    <div className="flex flex-col sm:flex-row gap-4 pt-2">
-                      <img 
-                        src="/src/a_museum_grade_high_fashion_editorial_campaign_photograph_4_5_portrait.png"
-                        alt="ANG by Aangi Shah Mock Post Concept 1" 
-                        className="w-full sm:w-1/2 aspect-[4/5] object-cover rounded-md shadow-sm"
-                        referrerPolicy="no-referrer"
-                      />
-                      <img 
-                        src="/src/a_museum_grade_high_fashion_editorial_campaign_photograph_4_5_portrait (1).png"
-                        alt="ANG by Aangi Shah Mock Post Concept 2" 
-                        className="w-full sm:w-1/2 aspect-[4/5] object-cover rounded-md shadow-sm"
-                        referrerPolicy="no-referrer"
-                      />
-                    </div>
+                <div className="flex flex-col sm:flex-row gap-4 pt-2">
+                  <img
+                    src="./concept1.png"
+                    alt="ANG by Aangi Shah Mock Post Concept 1"
+                    className="w-full sm:w-1/2 aspect-[4/5] object-cover rounded-md shadow-sm"
+                    referrerPolicy="no-referrer"
+                  />
+                  <img
+                    src="./concept2.png"
+                    alt="ANG by Aangi Shah Mock Post Concept 2"
+                    className="w-full sm:w-1/2 aspect-[4/5] object-cover rounded-md shadow-sm"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
 
                     <p className="font-headline-sm text-headline-sm text-primary font-serif pt-2">
                       This isn't just an invite. It's the first 'yes' of your wedding.
