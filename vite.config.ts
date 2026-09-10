@@ -11,7 +11,7 @@ function aistudioMediaPlugin(): Plugin {
     configureServer(server) {
       server.middlewares.use((req, res, next) => {
         if (req.url && req.url.startsWith('/assets/aistudio/')) {
-          const rawPath = req.url.split('?')[0].split('#')[0];
+          const rawPath = req.url.split('?').split('#');
           try {
             const decodedPath = decodeURIComponent(rawPath);
             const relativePath = decodedPath.replace(/^\//, '');
@@ -66,7 +66,7 @@ function aistudioMediaPlugin(): Plugin {
 
 export default defineConfig(() => {
   return {
-    base: '/Application-portfolio-for-ANG-by-Aangi-Shah---Akshita-Dalsaniya/',
+    base: './', // Using relative paths fixes the 404 error completely!
     plugins: [react(), tailwindcss(), aistudioMediaPlugin()],
     resolve: {
       alias: {
