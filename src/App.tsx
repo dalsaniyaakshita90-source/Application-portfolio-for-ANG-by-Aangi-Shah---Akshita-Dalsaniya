@@ -352,13 +352,13 @@ export default function App() {
                     {/* Mock Post Images */}
                     <div className="flex flex-col sm:flex-row gap-4 pt-2">
                       <img 
-                        src="/a_museum_grade_high_fashion_editorial_campaign_photograph_4_5_portrait.png" 
+                        src="/src/a_museum_grade_high_fashion_editorial_campaign_photograph_4_5_portrait.png"
                         alt="ANG by Aangi Shah Mock Post Concept 1" 
                         className="w-full sm:w-1/2 aspect-[4/5] object-cover rounded-md shadow-sm"
                         referrerPolicy="no-referrer"
                       />
                       <img 
-                        src="/a_museum_grade_high_fashion_editorial_campaign_photograph_4_5_portrait (1).png" 
+                        src="/src/a_museum_grade_high_fashion_editorial_campaign_photograph_4_5_portrait (1).png"
                         alt="ANG by Aangi Shah Mock Post Concept 2" 
                         className="w-full sm:w-1/2 aspect-[4/5] object-cover rounded-md shadow-sm"
                         referrerPolicy="no-referrer"
