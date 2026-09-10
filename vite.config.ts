@@ -66,7 +66,7 @@ function aistudioMediaPlugin(): Plugin {
 
 export default defineConfig(() => {
   return {
-    base: '/Application-portfolio-for-ANG-by-Aangi-Shah----Akshita-Dalsaniya/',
+    base: '/Application-portfolio-for-ANG-by-Aangi-Shah---Akshita-Dalsaniya/',
     plugins: [react(), tailwindcss(), aistudioMediaPlugin()],
     resolve: {
       alias: {
