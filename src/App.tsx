@@ -1,5 +1,3 @@
-import concept1 from './concept1.png';
-import concept2 from './concept2.png';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -354,13 +352,13 @@ export default function App() {
                     {/* Mock Post Images */}
                 <div className="flex flex-col sm:flex-row gap-4 pt-2">
                   <img
-                    src={concept1.png}
+                    src="concept1.png"
                     alt="ANG by Aangi Shah Mock Post Concept 1"
                     className="w-full sm:w-1/2 aspect-[4/5] object-cover rounded-md shadow-sm"
                     referrerPolicy="no-referrer"
                   />
                   <img
-                    src={concept2.png}
+                    src="concept2.png"
                     alt="ANG by Aangi Shah Mock Post Concept 2"
                     className="w-full sm:w-1/2 aspect-[4/5] object-cover rounded-md shadow-sm"
                     referrerPolicy="no-referrer"
